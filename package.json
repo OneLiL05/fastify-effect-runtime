@@ -1,0 +1,73 @@
+{
+	"name": "fastify-effect-runtime",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "Library for integrating Effect runtime into fastify",
+	"scripts": {
+		"build": "tsdown"
+	},
+	"keywords": [
+		"fastify",
+		"node.js",
+		"effect"
+	],
+	"author": "Kyrylo Savieliev <k_savieliev@icloud.com>",
+	"homepage": "https://github.com/OneLiL05/fastify-effect-runtime",
+	"maintainers": [
+		{
+			"name": "Kyrylo Savieliev",
+			"url": "https://github.com/OneLiL05"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:OneLiL05/fastify-effect-runtime.git"
+	},
+	"bugs": {
+		"url": "https://github.com/OneLiL05/fastify-effect-runtime/issues"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"license": "MIT",
+	"exports": {
+		".": "./dist/index.mjs",
+		"./package.json": "./package.json"
+	},
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
+	"files": [
+		"dist"
+	],
+	"lint-staged": {
+		"**/*.{js,ts,tsx}": [
+			"eslint --fix"
+		],
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"dependencies": {
+		"fastify-plugin": "^5.1.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^20.2.0",
+		"@commitlint/config-conventional": "^20.2.0",
+		"@types/node": "^25.0.3",
+		"@typescript-eslint/eslint-plugin": "^8.50.1",
+		"@typescript-eslint/parser": "^8.50.1",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"globals": "^16.5.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.2.7",
+		"prettier": "^3.7.4",
+		"tsdown": "^0.18.3",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"effect": ">=3.0.0",
+		"fastify": ">=5.0.0"
+	},
+	"packageManager": "pnpm@10.22.0"
+}
