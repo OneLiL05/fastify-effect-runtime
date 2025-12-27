@@ -4,7 +4,11 @@
 	"type": "module",
 	"description": "Library for integrating Effect runtime into fastify",
 	"scripts": {
-		"build": "tsdown"
+		"build": "tsdown",
+		"prepare": "husky",
+		"lint": "eslint .",
+		"format": "prettier --write .",
+		"typecheck": "tsc --noEmit"
 	},
 	"keywords": [
 		"fastify",
