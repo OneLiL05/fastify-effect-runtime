@@ -8,7 +8,7 @@ export default [
 	{ files: ['**/*.{js,mjs,cjs,ts}'] },
 	{ languageOptions: { globals: globals.node } },
 	{
-		ignores: ['coverage', 'public', 'dist', 'pnpm-lock.yaml'],
+		ignores: ['dist', 'pnpm-lock.yaml'],
 	},
 	pluginJs.configs.recommended,
 	...tseslint.configs.recommended,
